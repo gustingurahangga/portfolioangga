@@ -12,7 +12,8 @@
 }
 
 body.dark-mode {
-    --bg-color: #0f172a; /* Deep blue-black */
+    --bg-color: #0f172a;
+    /* Deep blue-black */
     --card-bg: #1e293b;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
@@ -49,6 +50,7 @@ body.dark-mode {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -81,6 +83,7 @@ header {
     font-size: 22px;
     font-weight: 800;
     margin-right: auto;
+    color: var(--text-main);
 }
 
 .nav-links {
@@ -91,13 +94,13 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-main);
     font-weight: 700;
     font-size: 14px;
 }
 
 .nav-links a:hover {
-    color: #FFD700;
+    color: var(--primary-color);
 }
 
 .btn-hire {
@@ -113,7 +116,7 @@ header {
     display: none;
     font-size: 28px;
     cursor: pointer;
-    color: #1a1a1a;
+    color: var(--text-main);
     z-index: 1001;
     transition: 0.3s;
 }
@@ -347,14 +350,14 @@ body.dark-mode .hero-text h1 {
 
 .edu-card:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
 .edu-card h4 {
     font-weight: 800;
     font-size: 22px;
     margin-bottom: 10px;
-    color: var(--secondary-color);
+    color: var(--text-main);
 }
 
 .edu-card p {
@@ -404,18 +407,19 @@ body.dark-mode .hero-text h1 {
 .project-item {
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-item img {
     width: 100%;
-    height: 250px; /* Menentukan tinggi tetap atau aspect ratio */
+    height: 250px;
+    /* Menentukan tinggi tetap atau aspect ratio */
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -447,7 +451,7 @@ body.dark-mode .hero-text h1 {
     height: 80px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -542,15 +546,15 @@ footer {
         top: 80px;
         left: 5%;
         right: 5%;
-        background: rgba(255, 255, 255, 0.95);
+        background: var(--nav-bg);
         backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: center;
         padding: 30px;
         border-radius: 20px;
         gap: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
         opacity: 0;
         pointer-events: none;
         transform: translateY(-20px);
